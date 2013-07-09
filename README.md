@@ -6,3 +6,14 @@ ECONOMICS: A COMPREHENSIVE GUIDE
 2. Install LaTeX. For Mac Users install [BasicTex](http://mirror.ctan.org/systems/mac/mactex/mactex-basic.pkg), and for Windows Users install [MikTex](http://miktex.org/). Install missing packages using the `tlmgr` command line tool for Mac Users.
 
 # Generating Files
+The files are compiled from the markdown format using pandoc. A rake task has been created for the creation of the `pdf`, `html` and `epub` filetypes.
+
+Their respective rake tasks are:
+1. `rake build:pdf`
+2. `rake build:epub`
+3. `rake build:html`
+
+To build all three types, just run `rake build:all`
+
+#Disclaimer
+The content provided here might not be a 100% accurate. We hope to receive pull requests/feedback on errors. Thanks in advance!
