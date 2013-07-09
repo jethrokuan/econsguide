@@ -80,7 +80,8 @@ class Builder
     puts "## Prepping output dir..."
     run "mkdir output" if !File.exists? "output"
     run "rm -rf output/*"
-    run "cp -r book/images output"
+    run "mkdir output/html/"
+    # run "cp -r book/images output"
   end
 
   def generate_markdown
@@ -93,7 +94,7 @@ class Builder
   def generate_html
     Dir.chdir OUTPUT_DIR do
       puts "## Generating HTML version..."
-      run "pandoc book.md --section-divs --self-contained --toc --standalone -t html5 -o book.html"
+      run "pandoc book.md -c ../templates/layout.css --section-divs --self-contained --toc --standalone -t html5 -o html/book.html"
     end
   end
 
