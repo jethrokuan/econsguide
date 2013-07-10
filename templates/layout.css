@@ -1,32 +1,82 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+
+body {
+  width: 770px;
+  color: #34495e;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.231;
+}
+
+a {
+  color: #3498DB;
+  text-decoration: underline;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+
+a:hover {
+  color: #2980B9;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 div#header, header
     {
-    /* Put border on bottom. Separates it from TOC or body that comes after it. */
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
     }
- 
-.title /* Pandoc title header (h1.title) */
+
+.title
     {
     text-align: center;
     }
- 
-.author, .date /* Pandoc author(s) and date headers (h2.author and h3.date) */
+
+.author, .date
     {
     text-align: center;
     }
- 
-/* Pandoc table of contents DIV when using the --toc option.
-   NOTE: this doesn't support Pandoc's --id-prefix option for #TOC and #header. 
-   Probably would need to use div[id$='TOC'] and div[id$='header'] as selectors.
-*/
- 
+
 div#TOC, nav#TOC
     {
     /* Put border on bottom to separate it from body. */
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
     }
- 
+
 @media print
     {
     div#TOC, nav#TOC
@@ -35,90 +85,53 @@ div#TOC, nav#TOC
         display: none;
         }
     }
- 
-/* ---- Headers and sections ---- */
- 
-h1, h2, h3, h4, h5, h6
-{
-    font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
- 
-    /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
- 
-    page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
-}
- 
-/* Pandoc with --section-divs option */
- 
+
 div div, section section /* Nested sections */
     {
     margin-left: 2em; /* This will increasingly indent nested header sections */
     }
- 
-p {}
- 
+
 blockquote
     { 
     font-style: italic;
     }
- 
-li /* All list items */
-    {
-    }
- 
-li > p /* Loosely spaced list item */
-    {
-    margin-top: 1em; /* IE: lack of space above a <li> when the item is inside a <p> */
-    }
- 
-ul /* Whole unordered list */
-    {
-    }
- 
-ul li /* Unordered list item */
-    {
-    }
- 
-ol /* Whole ordered list */
-    {
-    }
- 
-ol li /* Ordered list item */
-    {
-    }
- 
-hr {}
- 
-/* ---- Some span elements --- */
- 
-sub /* Subscripts. Pandoc: H~2~O */
-    {
-    }
- 
-sup /* Superscripts. Pandoc: The 2^nd^ try. */
-    {
-    }
-    
-em /* Emphasis. Markdown: *emphasis* or _emphasis_ */
-    {
-    }
-    
+
+ol,ul {
+    list-style:none;
+}
+
+blockquote,ul,ol,dl {
+    margin:1em;
+}
+
+ol,ul,dl {
+    margin-left:2em;
+}
+
+dl dd {
+    margin-left:1em;
+}
+
+th,td {
+    line-height:1.125em;
+    text-align:left;
+    vertical-align:top;
+    border-top:1px solid #DDD;
+    border-left:1px solid #DDD;
+    padding:.5em;
+}
+
+th {
+    font-weight:700;
+    text-align:center;
+    color:#20639b;
+}
+
 em > em /* Emphasis within emphasis: *This is all *emphasized* except that* */
     {
     font-style: normal;
     }
- 
-strong /* Markdown **strong** or __strong__ */
-    {
-    }
- 
-/* ---- Links (anchors) ---- */
- 
-a /* All links */
-    {
-    /* Keep links clean. On screen, they are colored; in print, they do nothing anyway. */
-    text-decoration: none;
-    }
- 
+
 @media screen
     {
     a:hover

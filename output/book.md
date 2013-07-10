@@ -7,6 +7,8 @@
 
 ## Scarcity, Opportunity Cost and Economic Efficiencies
 ## Resource Allocation in Competitive Markets
+$P=\frac{1}{MC}$
+
 ## Firms and How They Operate
 ## Market Failure
 
