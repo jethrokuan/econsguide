@@ -3,6 +3,10 @@
 
 \clearpage
 
+# Preface
+## Preface
+\clearpage
+
 # Part 1: Microeconomics
 
 ## Scarcity, Opportunity Cost and Economic Efficiencies

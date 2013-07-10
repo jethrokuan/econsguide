@@ -95,7 +95,7 @@ class Builder
     Dir.chdir OUTPUT_DIR do
       puts "## Generating HTML version..."
       run "cp ../templates/layout.css html/layout.css"
-      run "pandoc book.md -c layout.css --mathjax --section-divs --toc --standalone -t html5 -o html/book.html"
+      run "pandoc book.md -c layout.css --mathjax --section-divs --toc --standalone -A ../templates/footer.html -t html5 -o html/book.html"
     end
   end
 

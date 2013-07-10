@@ -3,6 +3,10 @@
 
 \clearpage
 
+# Preface
+<<[preface/preface.md]
+\clearpage
+
 # Part 1: Microeconomics
 
 <<[microeconomics/scarcity_opportunity_cost_and_efficiency.md]
