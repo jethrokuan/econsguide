@@ -6,14 +6,24 @@
 # Part 1: Microeconomics
 
 ## Scarcity, Opportunity Cost and Economic Efficiencies
+\clearpage
+
 ## Resource Allocation in Competitive Markets
-$P=\frac{1}{MC}$
+
+\clearpage
 
 ## Firms and How They Operate
+\clearpage
+
 ## Market Failure
+\clearpage
 
 # Part 2: Macroeconomics
 
 ## Key Economic Indicators
+\clearpage
+
 ## Macroeconomy and How It Works
+\clearpage
+
 ## International Economics

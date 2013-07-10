@@ -94,7 +94,8 @@ class Builder
   def generate_html
     Dir.chdir OUTPUT_DIR do
       puts "## Generating HTML version..."
-      run "pandoc book.md -c ../templates/layout.css --mathjax --section-divs -contained --toc --standalone -t html5 -o html/book.html"
+      run "cp ../templates/layout.css html/layout.css"
+      run "pandoc book.md -c layout.css --mathjax --section-divs --toc --standalone -t html5 -o html/book.html"
     end
   end
 
