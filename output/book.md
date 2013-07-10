@@ -6,6 +6,7 @@
 # Part 1: Microeconomics
 
 ## Scarcity, Opportunity Cost and Economic Efficiencies
+Scarcity means that society has __limited resources__ and __unlimited wants__
 \clearpage
 
 ## Resource Allocation in Competitive Markets
