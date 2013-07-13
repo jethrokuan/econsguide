@@ -5,6 +5,9 @@ ECONOMICS: A COMPREHENSIVE GUIDE
 1. Install [pandoc](https://code.google.com/p/pandoc/downloads/list).
 2. Install LaTeX. For Mac Users install [BasicTex](http://mirror.ctan.org/systems/mac/mactex/mactex-basic.pkg), and for Windows Users install [MikTex](http://miktex.org/). Install missing packages using the `tlmgr` command line tool for Mac Users.
 
+# Website to read the guide
+[Heroku](http://econsguide.herokuapp.com/)
+
 # Generating Files
 The files are compiled from the markdown format using pandoc. A rake task has been created for the creation of the `pdf`, `html` and `epub` filetypes.
 

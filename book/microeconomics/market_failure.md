@@ -5,7 +5,7 @@ Market Failure is defined as the following:
 
 > Market Failure is the failure of the __free market__ to allocate resources in a fashion that __maximises societal welfare__.
 
-This is the justification for government intervention. The very fact that the free market is failing to maximise societal welfare means that 
+This is the justification for government intervention. The very fact that the free market is failing to maximise societal welfare means that the government has to step in and take measures, which will be explored later, to correct the market failure.
 
 ### Causes of Market Failure
 Market failure occurs because of various reasons, all of which fall under these broad-based categories:
