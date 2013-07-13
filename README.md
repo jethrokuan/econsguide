@@ -15,5 +15,10 @@ Their respective rake tasks are:
 
 To build all three types, just run `rake build:all`
 
+Support for mobi has been dropped who uses that anyway.
+
+#Pushing up to Heroku
+To push the website to Heroku run: `rake push:website`. You must have the permissions to push to the repository. It's based off the PHP/Apache stack to serve the static files with a smart PHP 1 line hack :D
+
 #Disclaimer
 The content provided here might not be a 100% accurate. We hope to receive pull requests/feedback on errors. Thanks in advance!

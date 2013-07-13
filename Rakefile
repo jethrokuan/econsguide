@@ -10,6 +10,11 @@ task :prepare do
   Builder.new.prepare_output_directory
 end
 
+namespace :push do
+  task :website do
+    Builder.new.push_website
+  end
+end
 
 namespace :build do
   task :markdown => :prepare do
@@ -56,6 +61,7 @@ end
 
 class Builder
   OUTPUT_DIR = "output"
+  WEBSITE_DIR = "output/html"
 
   include Runner
 
@@ -81,9 +87,18 @@ class Builder
     run "mkdir output" if !File.exists? "output"
     run "rm -rf output/*"
     run "mkdir output/html/"
-    run "mkdir output/html/public"
-    run "mkdir output/html/public/{css,js,images}"
+    run "mkdir output/html/{css,js,images}"
     # run "cp -r book/images output"
+  end
+
+  def push_website
+    Dir.chdir WEBSITE_DIR do
+      run "git init ."
+      run "git add -A"
+      run "git commit -m 'New Push'"
+      run "heroku git:remote -a econsguide"
+      run "git push -f heroku master"
+    end
   end
 
   def generate_markdown
@@ -96,11 +111,9 @@ class Builder
   def generate_html
     Dir.chdir OUTPUT_DIR do
       puts "## Generating HTML version..."
-      run "cp ../html_base/layout.css html/public/layout.css"
-      run "cp ../html_base/config.ru html/config.ru"
-      run "cp ../Gemfile html/Gemfile"
-      run "cp ../Gemfile.lock html/Gemfile.lock"
-      run "pandoc book.md -c css/layout.css --mathjax --section-divs --toc --standalone -A ../html_base/footer.html -t html5 -o html/public/index.html"
+      run "cp ../html_base/layout.css html/css/layout.css"
+      run "cp ../html_base/index.php html/index.php"
+      run "pandoc book.md -c css/layout.css --mathjax --section-divs --toc --standalone -A ../html_base/footer.html -t html5 -o html/index.html"
     end
   end
 
