@@ -96,9 +96,9 @@ blockquote
     font-style: italic;
     }
 
-ol,ul {
-    list-style:none;
-}
+/* ol,ul { */
+/*     list-style:none; */
+/* } */
 
 blockquote,ul,ol,dl {
     margin:1em;

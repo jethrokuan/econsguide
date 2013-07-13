@@ -81,6 +81,8 @@ class Builder
     run "mkdir output" if !File.exists? "output"
     run "rm -rf output/*"
     run "mkdir output/html/"
+    run "mkdir output/html/public"
+    run "mkdir output/html/public/{css,js,images}"
     # run "cp -r book/images output"
   end
 
@@ -94,8 +96,11 @@ class Builder
   def generate_html
     Dir.chdir OUTPUT_DIR do
       puts "## Generating HTML version..."
-      run "cp ../templates/layout.css html/layout.css"
-      run "pandoc book.md -c layout.css --mathjax --section-divs --toc --standalone -A ../templates/footer.html -t html5 -o html/book.html"
+      run "cp ../html_base/layout.css html/public/layout.css"
+      run "cp ../html_base/config.ru html/config.ru"
+      run "cp ../Gemfile html/Gemfile"
+      run "cp ../Gemfile.lock html/Gemfile.lock"
+      run "pandoc book.md -c css/layout.css --mathjax --section-divs --toc --standalone -A ../html_base/footer.html -t html5 -o html/public/index.html"
     end
   end
 
@@ -126,43 +131,3 @@ class Builder
     end
   end
 end
-
-class Releaser
-  include Runner
-
-  def release
-    Dir.chdir File.dirname(__FILE__)
-    ensure_clean_git
-    copy_output_folder_to_release_folder
-    commit_release_folder
-    push
-  end
-
-  def ensure_clean_git
-    raise "Can't deploy without a clean git status." if git_dirty?
-  end
-
-  def copy_output_folder_to_release_folder
-    puts "## Making release..."
-    run "rm -rf release"
-    run "cp -R output release"
-  end
-
-  def commit_release_folder
-    puts "## Commit release..."
-    run "git add -u && git add . && git commit -m 'Generate new release'"
-  end
-
-  def push
-    puts "## Pushing release..."
-    run "git push"
-  end
-
-  private
-
-  def git_dirty?
-    `[[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]]`
-    dirty = $?.success?
-  end
-end
-
