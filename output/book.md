@@ -64,8 +64,20 @@ $$P=MC=0$$
 
 Prices can be seen as the value the consumer places on the good in question, but the price signal sent by consumers would then be zero in the case of public goods. The price signal does not reflect the value the consumers place on the good (which is a positive price), and this incorrect signal results in the failure of the price mechanism.
 
-#### Positive and Negative Externalities
+This is illustrated in the graph below:
+![Public Goods](images/pb.jpg)
 
+##### Policies
+
+###### Direct Provision
+
+By having the government the government produce public goods, the decision to produce and consume the goods are now in the hands of the government. The production of public goods will be in the amount which the government _perceives_ to be social optimal quantity, financed by taxpayers money.
+
+__Limitations__
+
+Direct provision might lead to the production of a good which should never have been produced in the first place. Less drastically, it is difficult for the government to determine the social optimum quantity for production, and it produces the public good at the level it deems to be social optimal. This could result in over/under-production of the good, that might even result in a greater deadweight-loss. This is an example of government failure.
+
+#### Positive and Negative Externalities
 
 #### Merit and Demerit Goods
 

@@ -9,35 +9,42 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link rel="stylesheet" href="css/layout.css">
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/layout.css">
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
+<div class="container">
 <header>
 <h1 class="title">Economics, a Comprehensive Guide</h1>
 <h2 class="author">Jethro Kuan, Vishnu R. Menon</h2>
 </header>
-<nav id="TOC">
-<ul>
-<li><a href="#preface">Preface</a><ul>
-<li><a href="#preface-1">Preface</a></li>
-</ul></li>
-<li><a href="#part-1-microeconomics">Part 1: Microeconomics</a><ul>
-<li><a href="#scarcity-opportunity-cost-and-economic-efficiencies">Scarcity, Opportunity Cost and Economic Efficiencies</a></li>
-<li><a href="#resource-allocation-in-competitive-markets">Resource Allocation in Competitive Markets</a></li>
-<li><a href="#firms-and-how-they-operate">Firms and How They Operate</a></li>
-<li><a href="#market-failure">Market Failure</a><ul>
-<li><a href="#what-is-market-failure">What is Market Failure?</a></li>
-<li><a href="#causes-of-market-failure">Causes of Market Failure</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#part-2-macroeconomics">Part 2: Macroeconomics</a><ul>
-<li><a href="#key-economic-indicators">Key Economic Indicators</a></li>
-<li><a href="#macroeconomy-and-how-it-works">Macroeconomy and How It Works</a></li>
-<li><a href="#international-economics">International Economics</a></li>
-</ul></li>
-</ul>
+<div class="row">
+<nav class="nav-toc span3 affix">
+  <div class="ul-nav">
+    <ul>
+    <li><a href="#preface">Preface</a><ul>
+    <li><a href="#preface-1">Preface</a></li>
+    </ul></li>
+    <li><a href="#part-1-microeconomics">Part 1: Microeconomics</a><ul>
+    <li><a href="#scarcity-opportunity-cost-and-economic-efficiencies">Scarcity, Opportunity Cost and Economic Efficiencies</a></li>
+    <li><a href="#resource-allocation-in-competitive-markets">Resource Allocation in Competitive Markets</a></li>
+    <li><a href="#firms-and-how-they-operate">Firms and How They Operate</a></li>
+    <li><a href="#market-failure">Market Failure</a><ul>
+    <li><a href="#what-is-market-failure">What is Market Failure?</a></li>
+    <li><a href="#causes-of-market-failure">Causes of Market Failure</a></li>
+    </ul></li>
+    </ul></li>
+    <li><a href="#part-2-macroeconomics">Part 2: Macroeconomics</a><ul>
+    <li><a href="#key-economic-indicators">Key Economic Indicators</a></li>
+    <li><a href="#macroeconomy-and-how-it-works">Macroeconomy and How It Works</a></li>
+    <li><a href="#international-economics">International Economics</a></li>
+    </ul></li>
+    </ul>
+  </div>
 </nav>
+<div id="content" class="span9 offset3">
 <p></p>
 <section id="preface" class="level1">
 <h1><a href="#preface">Preface</a></h1>
@@ -104,6 +111,16 @@
 <p>This results in all consumers unwilling to pay for the good. i.e.</p>
 <p><span class="math">\[P=MC=0\]</span></p>
 <p>Prices can be seen as the value the consumer places on the good in question, but the price signal sent by consumers would then be zero in the case of public goods. The price signal does not reflect the value the consumers place on the good (which is a positive price), and this incorrect signal results in the failure of the price mechanism.</p>
+<p>This is illustrated in the graph below: <img src="images/pb.jpg" alt="Public Goods" /></p>
+</section>
+<section id="policies" class="level5">
+<h5><a href="#policies">Policies</a></h5>
+<section id="direct-provision" class="level6">
+<h6><a href="#direct-provision">Direct Provision</a></h6>
+<p>By having the government the government produce public goods, the decision to produce and consume the goods are now in the hands of the government. The production of public goods will be in the amount which the government <em>perceives</em> to be social optimal quantity, financed by taxpayers money.</p>
+<p><strong>Limitations</strong></p>
+<p>Direct provision might lead to the production of a good which should never have been produced in the first place. Less drastically, it is difficult for the government to determine the social optimum quantity for production, and it produces the public good at the level it deems to be social optimal. This could result in over/under-production of the good, that might even result in a greater deadweight-loss. This is an example of government failure.</p>
+</section>
 </section>
 </section>
 <section id="positive-and-negative-externalities" class="level4">
@@ -142,8 +159,8 @@
 <h2><a href="#international-economics">International Economics</a></h2>
 </section>
 </section>
-<hr />
-<strong> Downloads: <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.pdf?raw=true">PDF</a>, <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.epub?raw=true">EPUB</a> <br />
-<strong> Take a look at the source and contribute <a href="https://github.com/jethrokuan/econsguide/">here</a>
+</div>
+</div>
+</div>
 </body>
 </html>

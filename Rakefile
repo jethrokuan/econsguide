@@ -87,8 +87,8 @@ class Builder
     run "mkdir output" if !File.exists? "output"
     run "rm -rf output/*"
     run "mkdir output/html/"
-    run "mkdir output/html/{css,js,images}"
-    # run "cp -r book/images output"
+    run "cp -r book/images output"
+    run "cp -r book/images output/html"
   end
 
   def push_website
@@ -111,9 +111,10 @@ class Builder
   def generate_html
     Dir.chdir OUTPUT_DIR do
       puts "## Generating HTML version..."
-      run "cp ../html_base/layout.css html/css/layout.css"
-      run "cp ../html_base/index.php html/index.php"
-      run "pandoc book.md -c css/layout.css --mathjax --section-divs --toc --standalone -A ../html_base/footer.html -t html5 -o html/index.html"
+      working = File.expand_path File.dirname(__FILE__)
+      work = working.inspect
+      run "cp -r ../html_base/. html"
+      run "pandoc book.md --data-dir=#{work} --template=template -c css/layout.css --mathjax --section-divs --toc --standalone -t html5 -o html/index.html"
     end
   end
 

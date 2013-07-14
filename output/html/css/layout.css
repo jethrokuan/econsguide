@@ -1,54 +1,66 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
 
 body {
-  width: 770px;
   color: #34495e;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.231;
 }
 
-a {
-  color: #3498DB;
-  text-decoration: underline;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-backface-visibility: hidden;
-}
+nav ul { padding: 0; margin-top: 0em; margin-bottom: 0em; margin-left: 1em; }
+nav ul li { list-style-type: none; margin: 0; padding: 0; }
 
-a:hover {
-  color: #2980B9;
-  text-decoration: none;
+h1,h2,h3,h4,h5,h6{
+  margin: 0.3em;
 }
-
-h1 {
+h1 a {
+  color: #00A0B0;
   font-size: 28px;
   font-weight: 900;
 }
-h2 {
+
+h1 a:hover {
+  color: #00A0B0;
+}
+
+h2 a{
+  color: #CC333F;
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 2px;
 }
-h3 {
+
+h2 a:hover {
+  color: #CC333F;
+}
+
+h3 a {
+  color: #EB6841;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 4px;
-  margin-top: 2px;
 }
-h4 {
+
+h3 a:hover {
+  color: #EB6841;
+}
+
+h4 a {
+  color: #6A4A3C;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 4px;
 }
-h5 {
+
+h4 a:hover {
+  color: #6A4A3C;
+}
+
+h5 a {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
-h6 {
+
+h6 a {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
