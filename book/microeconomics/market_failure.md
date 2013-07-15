@@ -43,7 +43,9 @@ $$P=MC=0$$
 Prices can be seen as the value the consumer places on the good in question, but the price signal sent by consumers would then be zero in the case of public goods. The price signal does not reflect the value the consumers place on the good (which is a positive price), and this incorrect signal results in the failure of the price mechanism.
 
 This is illustrated in the graph below:
-![Public Goods](images/pb.jpg)
+![Public Goods](images/pg.jpg)
+
+The price signal transmitted is the orange line, while the actual value the consumers place on the good is given by the MSB/MPB curve. Assuming no externalities, social optimum quantity is where the MSC and MSB curves intersect. As we can see the quantity consumed is now 0, an underconsumption. For each additional unit from 0 till $Q_{SO}$, the marginal benefits of consuming the good outweigh the marginal costs. There is thus a deadweight-loss due to underconsumption, given by the red shaded area.
 
 ##### Policies
 

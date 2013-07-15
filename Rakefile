@@ -114,7 +114,7 @@ class Builder
       working = File.expand_path File.dirname(__FILE__)
       work = working.inspect
       run "cp -r ../html_base/. html"
-      run "pandoc book.md --data-dir=#{work} --template=template -c css/layout.css --mathjax --section-divs --toc --standalone -t html5 -o html/index.html"
+      run "pandoc book.md --data-dir=#{work} --toc-depth=2 --template=template -c css/layout.css --mathjax --section-divs --toc --standalone -t html5 -o html/index.html"
     end
   end
 

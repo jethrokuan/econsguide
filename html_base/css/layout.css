@@ -14,44 +14,29 @@ h1,h2,h3,h4,h5,h6{
   margin: 0.3em;
 }
 h1 a {
-  color: #00A0B0;
+  color: #CC333F;
   font-size: 28px;
   font-weight: 900;
 }
 
 h1 a:hover {
-  color: #00A0B0;
+  color: #CC333F;
 }
 
 h2 a{
-  color: #CC333F;
   font-size: 26px;
   font-weight: 700;
 }
 
-h2 a:hover {
-  color: #CC333F;
-}
-
 h3 a {
-  color: #EB6841;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
-h3 a:hover {
-  color: #EB6841;
-}
-
 h4 a {
-  color: #6A4A3C;
   font-size: 20px;
   font-weight: 500;
-}
-
-h4 a:hover {
-  color: #6A4A3C;
 }
 
 h5 a {
@@ -88,6 +73,13 @@ div#TOC, nav#TOC
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
     }
+ul > li > a {
+  color: #CC333F;
+}
+
+ul > li > ul > li > a {
+  color: #0088cc;
+}
 
 @media print
     {
