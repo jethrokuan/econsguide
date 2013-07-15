@@ -12,6 +12,9 @@
 <<[microeconomics/scarcity_opportunity_cost_and_efficiency.md]
 \clearpage
 
+<<[microeconomics/demand_and_supply.md]
+\clearpage
+
 <<[microeconomics/resource_allocation_competitive_markets.md]
 \clearpage
 

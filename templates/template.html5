@@ -52,6 +52,10 @@ $endfor$
     <nav class="span3 affix visible-desktop">
       <h4>Table of Contents</h4>
         $toc$
+
+      <h4 style="margin-top:2em">Downloads</h4>
+        <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.pdf?raw=true">PDF</a>, <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.epub?raw=true">EPUB</a> <br />
+      &copy; Jethro Kuan, Vishnu R. Menon, 2013
     </nav>
     $endif$
     <div id="content" class="span9 offset3">
