@@ -1,5 +1,5 @@
 % Economics, a Comprehensive Guide
-% Jethro Kuan
+% Jethro Kuan, Vishnu R. Menon
 
 \clearpage
 

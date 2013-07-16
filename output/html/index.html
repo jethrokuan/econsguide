@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="Jethro Kuan">
+  <meta name="author" content="Jethro Kuan, Vishnu R. Menon">
   <title>Economics, a Comprehensive Guide</title>
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <div class="container-fluid">
             <header>
     <h1 class="title">Economics, a Comprehensive Guide</h1>
-            <h2 class="author">Jethro Kuan</h2>
+            <h2 class="author">Jethro Kuan, Vishnu R. Menon</h2>
                     </header>
             <div class="row-fluid">
     <nav class="span3 affix visible-desktop">
@@ -43,8 +43,8 @@
         </ul>
 
       <h4 style="margin-top:2em">Downloads</h4>
-        <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.pdf?raw=true">PDF</a>, <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.epub?raw=true">EPUB</a> <br />
-      &copy; Jethro Kuan, 2013
+        <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.pdf?raw=true">PDF</a>, <a href="https://github.com/jethrokuan/econsguide/blob/master/output/book.epub?raw=true">EPUB</a>, <a href="https://github.com/jethrokuan/econsguide/">Code Source</a> <br />
+      &copy; Jethro Kuan, Vishnu R. Menon, 2013
     </nav>
         <div id="content" class="span9 offset3">
     <p></p>
@@ -223,7 +223,60 @@
     <h1><a href="#part-2-macroeconomics">Part 2: Macroeconomics</a></h1>
     <section id="key-economic-indicators" class="level2">
     <h2><a href="#key-economic-indicators">Key Economic Indicators</a></h2>
-    <p></p>
+    <p>Just as how doctors require tools like thermometers to give a quantitative measure of the health of an individual, economic indicators are required to describe and assess the macroeconomy. These economic indicators are used to measure <em>relative</em> economic performance between countries(<strong>international comparison</strong>), or comparing the economic performance of a single country as time progresses (<strong>intertemporal comparison</strong>).</p>
+    <section id="size-of-the-economy" class="level3">
+    <h3><a href="#size-of-the-economy">Size of the Economy</a></h3>
+    <p>Economists use the concept of <strong>national income</strong> to measure the size of the economy. National income is proportional to the amount of economy activity within the country, and therefore ceteris paribus, the greater the national income, the greater the level of economic activity.</p>
+    <section id="gross-domestic-product-gdp" class="level4">
+    <h4><a href="#gross-domestic-product-gdp">Gross Domestic Product (GDP)</a></h4>
+    <blockquote>
+    <p>Nominal GDP is the sum of the market value of all <em>final</em> goods and services produced <em>within a country</em> over a given period of time (usually a year) <span class="math">\[GDP = \sum{P_x\times Q_x}\]</span></p>
+    </blockquote>
+    <p>The goods and services here are final goods and services, because the inclusion of semi-finished goods would result in a miscalculation, specifically <strong>double counting</strong>, where the market value of semi-finished goods are included along with the market value of the its final form.</p>
+    <p>As the term &quot;domestic&quot; implies, this number will only include economic activity (production) within the country. Whether the goods produced within the country are consumed by local or foreign households however does not matter.</p>
+    </section>
+    <section id="real-gdp" class="level4">
+    <h4><a href="#real-gdp">Real GDP</a></h4>
+    <p>However, a nominal GDP increase does not necessarily indicate a healthy economy. Notice there are two terms in the formulation of GDP, <span class="math">\(P_x\)</span> and <span class="math">\(Q_x\)</span>. This would mean that a GDP increase could be solely due to an increase in general price levels, and not output levels.</p>
+    <p>To better determine if economic growth was a result of increase in output levels, economists use the concept of <strong>real GDP</strong>. This is achieved by multiplying the value of output each year with the prices of those goods <em>in some predetermined year</em>. This year is known as the <strong>base year</strong>, and the price prevailing at that period of time is the <strong>base year price</strong> of the good.</p>
+    <p><span class="math">\[\text{Real GDP} = \sum{P_{byp}\times Q_x}\]</span></p>
+    </section>
+    <section id="gross-national-product-gnp" class="level4">
+    <h4><a href="#gross-national-product-gnp">Gross National Product (GNP)</a></h4>
+    <p>While GDP measure the market value of final goods and services <em>produced within the country</em>, the GNP measures the market value of final goods and services <em>produced by citizens of the country</em>, <strong>regardless of where they reside</strong>.</p>
+    <p><span class="math">\[\text{GNP} = \text{GDP} - \text{net factor (property) income from abroad}\]</span></p>
+    <p>The concept of GNP is important when many of the citizens of a country reside overseas, of which the income they generate overseas are repatriated to back to their home country. The value of the GDP will then be vastly different from that of the value of the GNP.</p>
+    </section>
+    <section id="net-national-product-nnp" class="level4">
+    <h4><a href="#net-national-product-nnp">Net National Product (NNP)</a></h4>
+    <p>The NNP is used by economists to recognise that some of the capital stock used suffer from wear and tear and require replacement. Capital stocks include items such as machinery and equipment. This would mean that the NNP would provide a better indication of the increase in productive capacity.</p>
+    <p><span class="math">\[\text{NNP} = \text{GNP} - \text{Depreciation}\]</span></p>
+    <p>Depreciation is also sometimes termed as <strong>capital consumption</strong> and <strong>replacement investment</strong>.</p>
+    </section>
+    <section id="making-comparisons" class="level4">
+    <h4><a href="#making-comparisons">Making Comparisons</a></h4>
+    <section id="intertemporal-comparisons" class="level5">
+    <h5><a href="#intertemporal-comparisons">Intertemporal Comparisons</a></h5>
+    <section id="measuring-economic-growth" class="level6">
+    <h6><a href="#measuring-economic-growth">Measuring Economic Growth</a></h6>
+    <p>To measure economic growth (this phrase is already a first derivative;&quot;change in economic activity over time&quot;), economists calculate the <em>percentage change</em> of GDP:</p>
+    <p><span class="math">\[\% \Delta \text{GDP}_x = \left(\frac{\text{GDP}_x-\text{GDP}_{x-1}}{\text{GDP}_{x-1}}\right)\times 100\%\]</span></p>
+    </section>
+    </section>
+    </section>
+    <section id="accounting-for-population-changes" class="level4">
+    <h4><a href="#accounting-for-population-changes">Accounting for Population Changes</a></h4>
+    <p>While GDP is an indication of the total economic activity of the country, it is not indicative of the amount of income received per person in the population on average. This information is important as it gives economists an idea of how much &quot;richer&quot; each individual on average is. To account for the population changes, economists use the concept of <strong>GDP per capita</strong>.</p>
+    <p>Mathematically we write:</p>
+    <p><span class="math">\[\text{GDP per capita} = \frac{\text{GDP}}{\text{population}}\]</span></p>
+    <p>We can approximate changes in per capita GDP by differentiating both sides by time.</p>
+    <p><span class="math">\[\frac{d\text{GDP per capita}}{dt} \approx \frac{\frac{d\text{GDP}}{dt}\times\text{population} - \text{GDP}\times\frac{d\text{population}}{dt}}{\text{population}^2}\]</span></p>
+    <p><span class="math">\[\frac{\frac{d\text{GDP per capita}}{dt}}{\text{GDP per capita}}\times 100\%\approx \frac{\frac{d\text{GDP}}{dt}\times\text{population} - \text{GDP}\times\frac{d\text{population}}{dt}}{\text{population}^2\times \frac{\text{GDP}}{\text{population}}}\times 100\%\]</span></p>
+    <p>Rearranging the terms, we get:</p>
+    <p><span class="math">\[\% \Delta \text{GDP per capita} \approx \% \Delta\text{GDP} -\% \Delta\text{population}\]</span></p>
+    <p>&quot;) </p>
+    </section>
+    </section>
     </section>
     <section id="macroeconomy-and-how-it-works" class="level2">
     <h2><a href="#macroeconomy-and-how-it-works">Macroeconomy and How It Works</a></h2>
