@@ -41,7 +41,7 @@ To measure economic growth (this phrase is already a first derivative;"change in
 
 $$\% \Delta \text{GDP}_x = \left(\frac{\text{GDP}_x-\text{GDP}_{x-1}}{\text{GDP}_{x-1}}\right)\times 100\%$$
 
-#### Accounting for Population Changes
+###### Accounting for Population Changes
 While GDP is an indication of the total economic activity of the country, it is not indicative of the amount of income received per person in the population on average. This information is important as it gives economists an idea of how much "richer" each individual on average is. To account for the population changes, economists use the concept of __GDP per capita__.
 
 Mathematically we write:
@@ -58,4 +58,49 @@ Rearranging the terms, we get:
 
 $$\% \Delta \text{GDP per capita} \approx \% \Delta\text{GDP} -\% \Delta\text{population}$$
 
-")
+The higher the GDP per capita, the greater the income earned on average per person. This means that the purchasing power of the people in the country have risen, ceteris paribus. This does not hold if the inflation rate is greater than the rate of increase in real GDP per capita.
+
+##### International Comparison
+
+###### Comparing Economic Size Across Countries
+One issue economists face when compaing economic size across countries is that GDP is often measured based on local currency. To overcome this problem economists convert each country's GDP to be expressed in a common currency, often the USD.
+
+###### Comparing Purchasing Power Across Countries
+The problem with the traditional approach of converting to the common currency for comparing purchasing power across countries using market exchange rate is that _prices of goods are different in different countries_. A packet of oreos may cost 1 dollar in Singapore, but 10 dollars in the US, and the exchange rate is not 1:10. More appropriately, the prices of goods and services in different countries are not sufficiently similar to make such a fleeting comparison.
+
+To resolve this issue, economists construct an artificial "exchange rate" that is based on the average prices of common goods and services across countries, termed as the "__purchasing power parity (PPP) exchange rate__".
+
+The construction of the PPP exchange rate for all countries can be problematic. 
+
+__FILL THIS UP__
+
+To make an accurate comparison of purchasing power across countries, economists then use the PPP GDP per capita.
+
+### Inflation
+In addition to the size of the economy, economists also concern themselves with other health indicators of the economy, among which include inflation.
+
+Inflation is defined as the following:
+
+> Inflation is a __sustained and inordinate__ increase in the general price level.
+
+Inflation rate is the percentage increase in the general price level.
+
+To measure inflation, economists use 2 indicators, the GDP deflator and the consumer price index (CPI).
+
+#### GDP Deflator
+$$\text{GDP Deflator}=\frac{\text{nominal GDP}}{\text{real GDP}} \times 100$$
+
+The GDP deflator is an index, and thus is dimensionless. Notice that by definition, the nominal and real GDP are equal in the base year. It then follows that the _GDP deflator has a value of 100 at the base year_.
+
+To find the inflation rate (in the case of the GDP deflator, the percentage increase in the _weighted_ average price of goods and services), we perform a familiar calculation:
+
+$$\left(\frac{d_x-d_{x-1}}{d_{x-1}}\right)\times 100\%$$
+
+where $d_x$ is the GDP deflator index value at year $x$.
+
+#### Consumer Price Index (CPI)
+The CPI is constructed using a common basket of goods and services that describes the general consumption pattern of the society. The consumption pattern and basket of goods and services are determined often through mass compulsory surveys and phone interviews. The prices of these goods and services are then recorded and assigned to be the base year. Some goods are purchased more than others, and thus take more weightage in the calculation of the CPI. The CPI is an _expenditure-weighted average_ of the prices of the goods and services selected.
+
+High inflation is undesirable for a country.
+
+__TBC__
